@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_white">#E6E1E1</color>
+    <color name="gray">#AFADAD</color>
+
+    <color name="my_primary">#49CB4F</color>
+    <color name="hintTextcolor">#515050</color>
+    <color name="my_secondary">#49CB4F</color>
+    <color name="blue_for_chatMessages">#42A5F5</color>
+    <color name="green_for_chatMessage">#19BDAE</color>
+
+</resources>

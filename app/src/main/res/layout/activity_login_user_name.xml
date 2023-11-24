@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    tools:context=".Login_UserName_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/cercle"
+                android:backgroundTint="@color/gray"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/cercle"
+                android:backgroundTint="@color/gray"
+                tools:ignore="MissingConstraints"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/cercle"
+                android:backgroundTint="@color/my_primary"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/progile_login_username"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/cercle"
+            android:backgroundTint="@color/my_primary"
+            android:src="@drawable/username_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your username "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+
+            <EditText
+                android:id="@+id/loginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintTextcolor"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_rounded_background"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:elevation="40dp"
+                android:textSize="20sp"
+                android:padding="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/loginButton_loging_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"/>
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/progressBar_login_username"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

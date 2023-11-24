@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_up"
+        android:backgroundTint="@color/my_primary"
+        android:padding="10dp"
+        android:id="@+id/toolbar_chatActivity"
+        >
+        <ImageButton
+            android:id="@+id/back_button_chatActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/my_primary"
+            android:src="@drawable/back_icon"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <include
+            android:id="@+id/profile_picture_chatActivity"
+            layout="@layout/profile_picture_view"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/back_button_chatActivity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/profile_picture_chatActivity"
+            android:id="@+id/username_chatActivity"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_chatActivity"
+        android:id="@+id/recyclerView_ChatActivity"
+        android:layout_above="@+id/search_Relative_layout"
+        android:layout_marginBottom="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_Relative_layout"
+        android:padding="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        >
+        <EditText
+            android:id="@+id/msgBox_chatActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/send_button_chatActivity"
+            android:background="@drawable/edit_text_rounded_background"
+            android:backgroundTint="@color/white"
+            android:hint="Type message"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintTextcolor"
+            tools:ignore="TouchTargetSizeCheck" />
+        <ImageButton
+            android:id="@+id/send_button_chatActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corner_full"
+            android:backgroundTint="@color/dark_white"
+            android:elevation="6dp"
+            android:src="@drawable/send_button_icon"
+            app:tint="@color/my_primary"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </RelativeLayout>
+</RelativeLayout>
